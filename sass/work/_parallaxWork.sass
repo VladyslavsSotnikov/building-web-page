@@ -1,0 +1,34 @@
+.parallaxWork
+    padding: 0
+    &__layer
+    &__content
+        position: absolute
+        left: 50%
+        transform: translate(-50%)
+        margin: 200px auto
+        color: #212529
+        text-align: center
+    &__title
+        font-size: 48px
+        font-weight: bold
+    &__link
+        display: inline-block
+        border: 2px solid #212529
+        border-radius: 100px
+        padding: 16px 50px
+        margin-top: 20px
+        color: #000
+        transition: all 0.3s ease-in-out
+        &:hover
+            text-decoration: none
+            color: #fff
+            background-color: #212529
+
+@media  ( max-width: 576px)
+    .parallaxWork
+        &__content
+            width: 90%
+        &__title
+            font-size: 34px
+
+        
